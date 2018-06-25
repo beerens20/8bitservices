@@ -109,3 +109,27 @@ body{
 .boardContent {
     margin-top: 50px;
 }
+
+.center-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+
+.center-item {
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+@media only screen and (min-width: 500px) {
+    .center-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        padding: 10px;
+        grid-template-areas:
+        "walkInfo ourMission sponsorship"
+    }
+}
