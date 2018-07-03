@@ -9,6 +9,37 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Marck+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            .imageGallery {
+                margin-top:100px;
+            }
+
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 500px) {
+                .column {
+                    width: 100%;
+                }
+            }
+            </style>
+
     <title>Walk to Remember, Fort Wayne</title>
 </head>
 
@@ -33,14 +64,87 @@
                 <a class="nav-link" href="board.html">Our Board</a>
             </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contactTarget">Contact</a>
               </li>
           </ul>
           </div>
       </div>
 </nav>
 
-<h1 class="topDiv fancy_header_text text-center">Coming Soon</h1>
+<!-- IMAGE GALLERY -->
+<div class="imageGallery">
+        <h2>2017 Walk to Remember Event</h2>
+    
+        <div class="row">
+            <div class="column">
+                <a href="/imgs/2017-wtr-pics-1.jpg" target="_blank">
+                <img src="/imgs/2017-wtr-pics-1.jpg" alt="Walk to Remember 2017" target="_blank" style="width:100%">
+                </a>
+            </div>
+            <div class="column">
+                <a href="/imgs/2017-wtr-pics-2.jpg" target="_blank">
+                <img src="/imgs/2017-wtr-pics-2.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+            <div class="column">
+                <a href="/imgs/2017-wtr-pics-3.jpg" target="_blank">
+                <img src="/imgs/2017-wtr-pics-3.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="/imgs/2017-wtr-pics-4.jpg" target="_blank">
+                <img src="/imgs/2017-wtr-pics-4.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+            <div class="column">
+                <a href="/imgs/2017-wtr-pics-5.jpg" target="_blank">
+                <img src="/imgs/2017-wtr-pics-5.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+            <div class="column">
+                <a href="/imgs/2017-wtr-pics-6.jpg" target="_blank">
+                <img src="/imgs/2017-wtr-pics-6.jpg" alt="Walk to Remember 2017" style="width:100%">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+                <div class="column">
+                    <a href="/imgs/2017-wtr-pics-7.jpg" target="_blank">
+                    <img src="/imgs/2017-wtr-pics-7.jpg" alt="Walk to Remember 2017" style="width:100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="/imgs/2017-wtr-pics-8.jpg" target="_blank">
+                    <img src="/imgs/2017-wtr-pics-8.jpg" alt="Walk to Remember 2017" style="width:100%">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="/imgs/2017-wtr-pics-9.jpg" target="_blank">
+                    <img src="/imgs/2017-wtr-pics-9.jpg" alt="Walk to Remember 2017" style="width:100%">
+                    </a>
+                </div>
+            </div>
+</div>
 
+
+<!-- FOOTER -->
+<div class="container-fluid" id="contactTarget">
+        <div class="row pageFooter bg-light">
+            <div class="col-sm-4 my-auto" id="copyright_text">
+                <p>Copyright &#169; 2018</p>
+                <p style="margin-top: -20px">Site designed by Michael Beerens</p>
+            </div>
+            <div class="col-sm-4 my-auto d-flex justify-content-around contactUs">
+                <a href="https://www.facebook.com/WalktoRememberFortWayne/" target="_blank"><span>Find us on Facebook: <i class="fab fa-facebook fa-3x"></i></span>
+                 
+                 </a>
+                <a href="mailto:walktorememberfw@hotmail.com">Email us: <span><i class="fas fa-envelope fa-3x"></i></span>
+                        
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
