@@ -102,6 +102,15 @@ body{
     margin-top: 50px;
 }
 
+.banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    min-width: 500px;
+    width: auto !important;
+    width: 500px;
+}
+
 .center-cards {
     display: grid;
     grid-template-columns: 1fr;
