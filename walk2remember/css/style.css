@@ -143,3 +143,49 @@ body{
 .contactUs a{
     text-decoration: none;
 }
+
+.sponsorshipInfo {
+    margin-top:100px;
+}
+
+.donationTypes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+
+.donationTypes-cards h5 {
+    text-align: center;
+}
+
+.donationTypes-cards p {
+    text-align: left;
+}
+
+.donationTypes-cards {
+    text-align: center;
+    background-color: #eaecee;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.donationTypes-cards, anyTimeDonation {
+    margin-left: 15px;
+}
+
+.donationTypes-cards, walkSponsorship {
+    margin-right: 15px;
+}
+
+/* @media only screen and (min-width: 480px) {
+    .donationTypes {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        padding: 10px;
+        grid-template-areas:
+        "anyTimeDonation walkSponsorship"
+    }
+} */
