@@ -189,3 +189,7 @@ body{
         "anyTimeDonation walkSponsorship"
     }
 } */
+
+.list-group-item p {
+    margin-left: 25%;
+}
