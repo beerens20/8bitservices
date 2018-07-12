@@ -2,29 +2,46 @@
   margin: 0px;
   padding: 0px; }
 
-.wrapper-aboutUs-leftPanel {
-  background: grey; }
-
-.wrapper-aboutUs-rightPanel {
-  background: lightblue; }
+.wrapper-aboutUs-leftPanel, .wrapper-aboutUs-rightPanel {
+  background: rgba(253, 235, 208, 0.3);
+  border-radius: 10px; }
 
 .topDiv {
-  margin-top: 100px; }
+  margin-top: 150px; }
+
+.wrapper-aboutUs-middlePanel {
+  margin-top: 50px; }
 
 .wrapper {
   display: grid;
   overflow: auto;
-  grid-column-gap: 50px;
+  grid-column-gap: 10px;
   grid-template-columns: 1fr;
   margin-left: 25px;
   margin-right: 25px;
   padding-bottom: 50pxpx; }
 
+.wrapper-aboutUs-leftPanel, .wrapper-aboutUs-rightPanel {
+  padding: 15px; }
+
+.wrapper-aboutUs-leftPanel li {
+  margin-left: 25px; }
+
 @media (min-width: 500px) {
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "wrapper-aboutUs-leftPanel wrapper-aboutUs-rightPanel"; } }
+    grid-template-columns: 1fr 80px 1fr;
+    grid-template-areas: "wrapper-aboutUs-leftPanel wrapper-aboutUs-middlePanel wrapper-aboutUs-rightPanel"; } }
 
 #footer {
   margin-top: 25px; }
+
+#contactPhone, a:link {
+  text-decoration: none; }
+
+.wrapper-aboutUs-rightPanel ul {
+  list-style-type: none; }
+
+.wrapper-aboutUs-rightPanel li {
+  font-size: 20px;
+  margin-left: 5%; }
