@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+//TEMPORARY STYLING
+.wrapper-aboutUs-leftPanel {
+    background: grey;
+}
+
+.wrapper-aboutUs-rightPanel {
+    background: lightblue;
+}
+
+//TEMPORARY STYLING
+
+.topDiv {
+    margin-top: 100px;
+}
+
+.wrapper {
+    display: grid;
+    overflow: auto;
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 50pxpx;
+}
+
+@media (min-width: 500px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "wrapper-aboutUs-leftPanel wrapper-aboutUs-rightPanel";
+    }
+}
+
+#footer {
+    margin-top: 25px;
+}
+
+
