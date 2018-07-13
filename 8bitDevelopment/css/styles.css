@@ -2,72 +2,79 @@
   margin: 0px;
   padding: 0px; }
 
-.wrapper-aboutUs-leftPanel, .wrapper-aboutUs-rightPanel {
-  background: rgba(253, 235, 208, 0.3);
-  border-radius: 10px; }
-
 .topDiv {
   margin-top: 150px; }
 
-.wrapper-aboutUs-middlePanel {
-  margin-top: 50px; }
+#tabbed-content {
+  margin: 0 2%; }
 
-.wrapper {
-  display: grid;
-  overflow: auto;
-  grid-column-gap: 10px;
-  grid-template-columns: 1fr;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding-bottom: 50pxpx; }
+#tabbed-content .tab-li {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-family: 'VT323', monospace;
+  font-size: 1.5em; }
 
-.wrapper-aboutUs-leftPanel, .wrapper-aboutUs-rightPanel {
-  padding: 15px; }
+#tabbed-content .panel {
+  display: none;
+  padding: 5px 10px;
+  border-radius: 4px; }
 
-.wrapper-aboutUs-leftPanel li {
-  margin-left: 25px; }
+#tabbed-content .panel h5 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px; }
 
-@media (min-width: 500px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 80px 1fr;
-    grid-template-areas: "wrapper-aboutUs-leftPanel wrapper-aboutUs-middlePanel wrapper-aboutUs-rightPanel"; } }
-
-#footer {
-  margin-top: 25px; }
+#tabbed-content .panel.active {
+  display: block; }
 
 #contactPhone, a:link {
   text-decoration: none; }
 
-.wrapper-aboutUs-rightPanel ul {
+#contact ul {
   list-style-type: none; }
 
-.wrapper-aboutUs-rightPanel li {
+#about li, #contact li {
   font-size: 20px;
-  margin-left: 5%; }
+  margin-left: 2%; }
 
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1; }
+/*
+.wrapper-aboutUs-middlePanel {
+    margin-top: 50px;
+}
 
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s; }
+.wrapper, #tabbed-content {
+    display: grid;
+    overflow: auto;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 50pxpx;
+}
 
-.tab button:hover {
-  background-color: #ddd; }
+.wrapper-aboutUs-leftPanel, .wrapper-aboutUs-rightPanel {
+    padding: 15px;
+}
 
-.tab button.active {
-  background-color: #ccc; }
+.wrapper-aboutUs-leftPanel li {
+    margin-left: 25px;
+}
 
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none; }
+@media (min-width: 500px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 80px 1fr;
+        grid-template-areas:
+        "wrapper-aboutUs-leftPanel wrapper-aboutUs-middlePanel wrapper-aboutUs-rightPanel";
+    }
+}
+
+#footer {
+    margin-top: 25px;
+}
+*/

@@ -3,24 +3,73 @@
     padding: 0px;
 }
 
-//TEMPORARY STYLING
-.wrapper-aboutUs-leftPanel, .wrapper-aboutUs-rightPanel {
-    background: rgba(253, 235, 208, 0.3);
-    border-radius: 10px;
-    
-}
-
-//TEMPORARY STYLING
+// FONTS
+    // font-family: 'Rubik', sans-serif;
+    // font-family: 'Pacifico', cursive; h5?
+    // font-family: 'VT323', monospace;
+// FONTS
 
 .topDiv {
     margin-top: 150px;
 }
 
+// TAB CONTENT STYLING
+#tabbed-content {
+    margin: 0 2%;
+}
+
+#tabbed-content .tab-li {
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+}
+
+#tabbed-content .panel {
+    display: none;
+    // border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .panel h5 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+#tabbed-content .panel.active {
+    display: block;
+}
+
+#contactPhone, a:link {
+    text-decoration: none;
+}
+
+#contact {
+    ul {
+    list-style-type: none;
+    }
+}
+
+#about li, #contact li {
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+
+
+/*
 .wrapper-aboutUs-middlePanel {
     margin-top: 50px;
 }
 
-.wrapper {
+.wrapper, #tabbed-content {
     display: grid;
     overflow: auto;
     grid-column-gap: 10px;
@@ -50,51 +99,4 @@
 #footer {
     margin-top: 25px;
 }
-
-#contactPhone, a:link {
-    text-decoration: none;
-}
-
-.wrapper-aboutUs-rightPanel {
-    ul {
-    list-style-type: none;
-    }
-}
-
-.wrapper-aboutUs-rightPanel li {
-    font-size: 20px;
-    margin-left: 5%;
-}
-
-
-// TAB CONTENT STYLING
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-
-.tab button:hover {
-    background-color: #ddd;
-}
-
-.tab button.active {
-    background-color: #ccc;
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
+*/

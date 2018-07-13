@@ -1,20 +1,16 @@
-function openPage(evt, pageName) {
-    //Declare all variables
-    var i, tabcontent, tablinks;
+//Tabbed Content
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel');
 
-    //Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for(i=0; i<tabcontent.length; i++) {
-        tabcontent[i].style.display="none";
+tabs.addEventListener('click', function(e){
+    if(e.target.tagName == 'LI') {
+        const targetPanel = document.querySelector(e.target.dataset.tabs);
+        panels.forEach(function(panel){
+            if (panel == targetPanel){
+                panel.classList.add('active');
+            } else {
+                panel.classList.remove('active');
+            }
+        })
     }
-
-    //Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for(i=0; i<tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    //Show the current tab and add an "active" class to the button that opened the tab
-    document.getElementById("pageName").style.display = "block";
-    evt.currentTarget.className += " active";
-}
+})
